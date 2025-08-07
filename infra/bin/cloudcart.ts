@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import { CloudcartStack } from '../lib/cloudcart-stack';
+import { CloudCartStack } from '../lib/cloudcart-stack';
 
 const app = new cdk.App();
-new CloudcartStack(app, 'CloudcartStack', {
+new CloudCartStack(app, 'CloudcartStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
@@ -14,7 +14,7 @@ new CloudcartStack(app, 'CloudcartStack', {
 
   /* Uncomment the next line if you know exactly what Account and Region you
    * want to deploy the stack to. */
-  // env: { account: '123456789012', region: 'us-east-1' },
+  env: { account: '637423341661', region: 'eu-west-1' },
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
